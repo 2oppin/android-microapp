@@ -1,0 +1,6 @@
+app/gradle/
+app/.gradle
+app/gradlew
+app/gradlew.*
+app/app/build/
+

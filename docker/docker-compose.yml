@@ -1,0 +1,11 @@
+version: '3'
+services:
+  gradle:
+      build:
+        context: ./gradle
+      hostname: "gradle"
+      tty: true
+      volumes: 
+        - ../app:/opt/app
+        - ./gradle/scripts:/opt/scripts
+      command: sh /opt/scripts/entrypoint.sh
